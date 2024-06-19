@@ -10,7 +10,7 @@ app.get("/", function(request, response) {
 
 app.post("/", function(request, response) {
     const query = request.body.cityName;
-    const apikey = "48d8297fc08db4d811229289c46283cb";
+    const apikey = "48389a71c340ba019f6143a7c45ae874";
     const unit = "metric";
     const url = "https://api.openweathermap.org/data/2.5/weather?q=" + query + "&APPID=" + apikey + "&units=" + unit;
 
@@ -49,6 +49,6 @@ app.post("/", function(request, response) {
     });
 });
 
-app.listen(3000, function() {
+app.listen(5000, function() {
    console.log("app is running");
 });
